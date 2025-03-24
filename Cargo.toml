@@ -12,3 +12,4 @@ shared-version = true
 [profile.dist]
 inherits = "release"
 lto = "thin"
+pre-release-hook = ["just", "release-hook"]

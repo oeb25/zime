@@ -1,8 +1,14 @@
 [workspace]
 members = ["crates/*"]
 resolver = "3"
+package.repository = "https://github.com/oeb25/zime"
 
 [workspace.metadata.release]
 publish = false
 tag-name = "v{{version}}"
 shared-version = true
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"

@@ -2,13 +2,16 @@
 name = "zime"
 version = "0.1.0"
 edition = "2024"
+repository.workspace = true
 
 [dependencies]
 biblatex = "0.10.0"
 bstr = "1.11.3"
 camino = "1.1.9"
 clap = { version = "4.5.32", features = ["derive"] }
-clap-verbosity-flag = { version = "3.0.2", default-features = false, features = ["tracing"] }
+clap-verbosity-flag = { version = "3.0.2", default-features = false, features = [
+    "tracing",
+] }
 cliclack = "0.3.5"
 color-eyre = "0.6.3"
 directories = "6.0.0"

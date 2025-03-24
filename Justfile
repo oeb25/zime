@@ -1,3 +1,6 @@
+install:
+    cargo install --path crates/zime
+
 release *args="":
     git checkout HEAD -- CHANGELOG.md
     cargo release {{args}}
